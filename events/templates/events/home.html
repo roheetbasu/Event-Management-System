@@ -1,0 +1,15 @@
+{% extends "events/base.html" %}
+{% block content %}
+{% for hall in halls %}
+<article class="media content-section">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" href="#">{{ hall.hall_name }}</a>
+      </div>
+      <p class="article-content">Capacity: {{ hall.capacity }}</p>
+    </div>
+  </article>
+
+
+{% endfor %}
+{% endblock content%}
